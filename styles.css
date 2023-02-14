@@ -1,0 +1,66 @@
+/*____________________________________________________________________
+    Project: Ejercicio evaluable
+    Version: 7.0
+    Last change: 11/02/2023
+    Author: Andrea
+---------------------[TABLE OF CONTENTS]---------------------
+    1- Vídeo
+    2- Buscador
+---------------------[COLOR PALETTE]---------------------
+    - black;
+    - red
+    - #f1f1f1
+    - rgb(1, 10, 69)                                                                                                                                                                   
+______________________________________________________________________
+*/
+
+/* 1- VÍDEO */
+#myVideo {
+    top: 0;
+    bottom: 0;
+    object-fit: cover; 
+    object-position: center center; 
+    opacity: 1;
+    z-index: 2000;
+}
+.content {
+    /*Disposición del contenido*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 2100;
+    /*Estilos*/
+    background: rgba(1, 10, 69, 0.9);
+    color: #f1f1f1;
+    /*Animación*/
+    animation-delay: 3s;
+    animation: mymove 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;  
+}
+/*Movimiento de la animación*/
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 3000px;}
+}
+/*Estilos específicos para elementos del contenido del vídeo*/
+.content hr{
+    border: 0.2em solid red;
+    background-color: red;
+    width: 10%;
+    margin-left: 0;
+    z-index: 2000;
+}
+.content p{
+    width: 70%;
+}
+
+/* 2- Estilo buscador*/
+.show{
+    display: flex;
+}
+
+.link{
+    color: #0f50b2;
+}
