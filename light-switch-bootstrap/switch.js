@@ -35,9 +35,7 @@
 
     // Logo
     let logo = document.getElementById("logo");
-    logo.setAttribute("src", "./img/logo-blanco.svg");
-    console.log(logo.getAttribute("src"));
-    
+    logo.setAttribute("src", "./img/logo-blanco.svg");  
 
     // set light switch input to true
     if (!lightSwitch.checked) {
